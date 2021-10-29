@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head><strong>
+        <title>Entorno grafico</title>
+    </strong></head>
+
+<body style="color: rgb(229 , 232, 232); background-color: rgb(74, 35, 90);">
+    <h1><strong>Practicando el <span style="color: black;">entorno grafico</span></strong></h1>
+
+    <h2 style="color: rgb(229 , 232, 232);"><i><strong>Que es UTF ?</strong></i></h2>
+    <p><dfn>Lenguaje unificado de modelado que proporciona notación
+            estándar visual para documentar el análisis y diseño de
+            sistemas orientados a objetos.</dfn></p>
+
+    <h1 style="color: rgb(229 , 232, 232);"><strong>Ejemplo de codigo en <span
+                style="color: brown;"><del>JAVA</del></span></strong></h1>
+
+                <p style="color: rgb(82, 190, 128); background-color: bisque;"><code>
+                    public Cliente alta (Cliente c) {<br>
+                        Statement st;<br>		
+                      PreparedStatement ps;<br>
+                         Connection con = abrirBase();<br>
+                         <br>
+                         try {<br>
+                             ps = con.prepareStatement("INSERT INTO tclientes (Nombre,Telefono) VALUES (?,?);");<br>
+                             ps.setString(1, c.getNombre());<br>
+                             ps.setString(2, c.getTelefono());<br>
+                             ps.executeUpdate();<br>
+                         } catch(Exception ex) {cerrarBase(con) ;;return null;} <br>
+                        <br>
+                        int idCliente;<br>
+                        <br>
+                        try {<br>
+                            st = con.createStatement();<br>
+                            ResultSet rs = st.executeQuery("SELECT Max(Id) AS Maximo FROM tclientes");<br>
+                            rs.next();<br>
+                            idCliente = rs.getInt("Maximo");<br>
+                        } catch (Exception ex) {cerrarBase(con);ex.printStackTrace();return null;} <br>
+                       <br>
+                        c.setId(idCliente);<br>
+                        cerrarBase(con);<br>
+                         return c;<br>
+                  } <br>
+                </code></p>
+</body>
+
+</html>
