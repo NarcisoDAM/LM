@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>  
+	<head>
+		<title>Ejercicio 40.1</title>
+	</head>
+	<body>
+		<form>
+			<pre>
+			  Nombre:        <input type="text" id="nombre" name="nombre" value="">
+			  
+			  Apellidos:     <input type="text" id="apellidos" name="apellidos" value="">
+			  
+			  Direccion:     <input type="text" id="direccion" name="direccion" value="">
+			  
+			  Localidad:     <input type="text" id="localidad" name="localidad" value="">
+			  
+			  Provincia:     <input type="text" id="provincia" name="provincia" value="">
+			  
+			  Codigo postal: <input type="text" id="cp" name="cp" value="">
+			  
+			  Telefono:      <input type="text" id="tlf" name="tlf" value="">
+			  
+			  Sexo:
+			  <div id="sexos">
+				<input type="radio" id="sexo1" name="sexos" value="primer_radio"> Hombre
+	  
+				<input type="radio" id="sexo2" name="sexos" value="segundo_radio"> Mujer
+			  </div>
+			  
+			  <label for="estado">Estado Civil:</label><br>
+			  <select name="select" size="5">
+				<option value="estado1" selected>Soltero/a</option>
+				<option value="estado2">Casado/a</option>
+				<option value="estado3">Union libre o union de hecho</option>
+				<option value="estado4">Separado/a</option>
+				<option value="estado5">Divorciado/a</option>
+				<option value="estado6">Viudo/a</option>
+			  </select><br><br>
+			  
+			  <label for="estudios">Estudios realizados:</label>
+			  <div id="estudios">
+				<input type="radio" id="radio1" name="estudios" value="primer_radio"> Sin estudios
+	  
+				<input type="radio" id="radio2" name="estudios" value="segundo_radio"> Estudios primarios
+
+				<input type="radio" id="radio3" name="estudios" value="tercer_radio"> Estudios secundarios
+		 
+				<input type="radio" id="radio4" name="estudios" value="cuarto_radio"> Formacion profesional
+
+				<input type="radio" id="radio5" name="estudios" value="quinto_radio"> Estudios universitarios
+			  </div>
+			  <div id="botones">
+				<input type="submit" value="Enviar">  <input type="reset" value="Limpiar datos">
+			  </div>
+			</pre>
+		</form>
+	</body>
+</html>

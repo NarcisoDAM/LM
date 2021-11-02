@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>  
+<head>
+<title>Ejercicio 40.4</title>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+</head>
+<body>
+<form>
+<label>Datos personales:</label><br><br>
+<pre>	
+Apellidos:     <input type="text" id="apellidos" name="apellidos" value="">
+			
+Nombre:        <input type="text" id="nombre" name="nombre" value="">
+			
+Dni:           <input type="text" id="dni" name="dni" value="">
+
+Nacido en:     <input type="text" id="nacimiento" name="nacimiento" value="">
+			 
+Provincia:     <input type="text" id="provincia" name="provincia" value="">
+			
+Fecha Nac:     <input type="text" id="fechaNac" name="fechaNac" value="">
+			
+Domicilio:     <input type="text" id="domicilio" name="domicilio" value="">
+			 
+Numero:        <input type="text" id="numero" name="numero" value="">
+			 
+Piso:          <input type="text" id="piso" name="piso" value="">
+			 
+Letra:         <input type="text" id="letra" name="letra" value="">
+ 
+Localidad:     <input type="text" id="localidad" name="localidad" value="">
+
+Telefono:      <input type="text" id="tlf" name="tlf" value="">
+<pre>
+
+
+<fieldset style="background-color:#FCFFB4">
+<legend>Requisitos de acceso:</legend>
+<input type="radio" id="accesodir" name="accesosprinc" type="text"> Directo
+<div id="formaAcceso">
+   <input type="radio" id="acceso1" name="accesossecun" type="text"> Bachillerato LOGSE. Modalidad: <input type="text" name="logsetext" type="text">
+   <input type="radio" id="acceso2" name="accesossecun" type="text"> Bachillerato experimental
+   <input type="radio" id="acceso3" name="accesossecun" type="text"> COU. Opcion: <input type="text" name="coutext" type="text">
+   <input type="radio" id="acceso4" name="accesossecun" type="text"> FP2
+   <input type="radio" id="acceso5" name="accesossecun" type="text"> Otros (especifique): <input type="text" name="otrostext" type="text">
+</div>
+<input type="radio" id="accesoprueba" name="accesosprinc" type="text"> Mediante prueba
+</fieldset>
+
+
+<fieldset style="background-color:#D3D3D3">
+<legend>Solicitud:</legend>
+El/la que suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado 
+superior:
+Ciclo formativo: <select name="cicloformativo">
+				   <option selected value="0"> Elige una opción </option>
+					   <optgroup label="Ciclos de Grado Superior - Informática"> 
+					   <option value="1">Diseño de aplicaciones Web</option> 
+					   <option value="2">Diseño de aplicaciones multiplataforma</option> 
+					   <option value="3">Administración de sistemas informáticos y redes</option> 
+				   </optgroup> 
+				   <optgroup label="Ciclos de Grado Superior - Medicina"> 
+					   <option value="10">Radioterapia y Dosimetría</option> 
+					   <option value="11">Anatomía Patológica y Citodiagnóstico</option> 
+					   <option value="12">Laboratorio Clínico y Biómedico</option> 
+				   </optgroup> 
+				 </select>
+En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:
+<table class="default">
+  <tr>
+    <th>Ciclos formativos</th>
+    <th>Centros</th>
+    <th>Localidad</th>
+  </tr>
+  <tr>
+    <td><input type="text" id="ciclo1" name="preferenciaciclo" value=""></td>
+    <td><input type="text" id="centro1" name="preferenciacentro" value=""></td>
+    <td><input type="text" id="localidad1" name="preferencialocalidad" value=""></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="ciclo2" name="preferenciaciclo" value=""></td>
+    <td><input type="text" id="centro2" name="preferenciacentro" value=""></td>
+    <td><input type="text" id="localidad2" name="preferencialocalidad" value=""></td>
+  </tr>
+</table>
+Modalidad de horario especial(marque): <input type="checkbox" id="horario" name="horarioespecial" value="">
+</fieldset>
+
+
+<fieldset style="background-color:#D3D3D3">
+<legend>Documentación presentada:</legend>
+<input type="checkbox" id="fotocopiadni" name="documentacion" value=""> Fotocopia DNI		<input type="checkbox" id="fotocopiadni" name="documentacion" value=""> Certificado académico DNI
+<input type="checkbox" id="otrosdoc" name="documentacion" value=""> Otros documentos (especifique): <input type="text" id="textotrosdoc" name="documentacion" value="">
+</fieldset>
+				
+<div id="botones">
+<input type="submit" value="Enviar">  <input type="reset" value="Limpiar datos">
+</div>
+</form>
+</body>
+</html>

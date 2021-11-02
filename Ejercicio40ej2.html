@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>  
+	<head>
+		<title>Ejercicio 40.2</title>
+	</head>
+	<body>
+		<form>
+		<pre>
+			<label for="pagos">Formas de pago:</label>
+			<div id="pagos">
+				<input type="radio" id="pago1" name="pagos" value="1"> Cheque
+				<input type="radio" id="pago2" name="pagos" value="2" onclick="numGiroPostal.disabled = false"> Giro postal <input type="text" id="numGiroPostal" name="numGiroPostal" placeholder="###-###-###" disabled />
+				<input type="radio" id="pago3" name="pagos" value="3"> Contra reembolso
+				<input type="radio" id="pago4" name="pagos" value="4"> Tarjeta de credito
+				<div id="detalles-tarjeta">
+					<label>Detalles de tarjeta:</label>
+					
+					<input type="radio" id="tarjeta1" name="tarjetas" value="5"> Visa
+					<input type="radio" id="tarjeta2" name="tarjetas" value="6"> American Express
+					<input type="radio" id="tarjeta3" name="tarjetas" value="7"> 4b
+					<input type="radio" id="tarjeta4" name="tarjetas" value="8"> Servired
+					<input type="radio" id="tarjeta5" name="tarjetas" value="9"> Red 6000
+					
+					Numero de tarjeta <input type="text" id="numTarjeta" name="numTarjeta" placeholder="###-###-###" disabled />
+
+					Fecha Caducidad <input type="text" id="fechaTarjeta" name="fechaTarjeta" placeholder="DD-MM-YY" disabled />
+
+					Numero CVV <input type="text" id="cvvTarjeta" name="cvvTarjeta" placeholder="xxx" disabled />
+
+					Titular de la tarjeta <input type="text" id="titularTarjeta" name="titularTarjeta" placeholder="Titular de la tarjeta" disabled />
+				</div>			
+			</div>
+			<div id="botones">
+				<input type="submit" value="Proceder a pago">  <input type="reset" value="Limpiar datos">
+			</div>
+		</pre>
+		</form>
+	</body>
+</html>
