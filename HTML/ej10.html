@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head><strong>
+        <title>Un completo</title>
+    </strong></head>
+
+<body style="color: rgb(229 , 232, 232); background-color: rgb(74, 35, 90);">
+    <h2><strong>Interfaz</strong></h2>
+    <h3><em>(Interface)</em></h3>
+    <p><dfn>Una interfaz se trata como una clase especial de Java. Cada
+            interface se compila en un archivo independiente de
+            bytecode, tal como una clase ordinaria. No se puede crear
+            un instancia de la interfaz. La estructura de una interfaz
+            Java es similar al de una clase abstracta en la que se puede
+            tener datos y métodos. Los datos ,sin embargo ,deben ser
+            constantes y los métodos pueden tener sólo declaraciones
+            sin implementación. En Java existe sólo herencia simple y
+            una clase puede heredar de una supereclase. Esta
+            restricción se puede superar por el uso de una interfaz</dfn></p>
+
+    <h2><strong>Lenguaje de programación</strong></h2>
+    <h3><em>(Programming language)</em></h3>
+    <p><dfn>Notación utilizada por los programadores para escribir
+            programas . un lenguaje tiene una sintaxis (las palabras y
+            símbolos utilizadas para escribir códigos de programa), una
+            gramática (las reglas que definen una secuencia de palabras
+            y símbolos significativos y correctos) y semántica. Java es
+            un lenguaje de programación</dfn></p>
+
+    <h2><strong>Sintaxis</strong></h2>
+    <h3><em>(Syntax)</em></h3>
+    <p><dfn>Conjunto de reglas que definen el significado de un
+            programa sintácticamente válido. Java toma un enfoque
+            operacional en semántica de modo que el comportamiento
+            y por consiguiente el significado de un programa se define
+            por la máquina sobre la que esta ejecutando el programa</dfn></p>
+
+
+    <h2 style="color: rgb(229 , 232, 232);"><i><strong>Que es UTF ?</strong></i></h2>
+    <p><dfn>Lenguaje unificado de modelado que proporciona notación
+            estándar visual para documentar el análisis y diseño de
+            sistemas orientados a objetos.</dfn></p>
+
+    <h1 style="color: rgb(229 , 232, 232);"><strong>Ejemplo de codigo en <span
+                style="color: brown;"><del>JAVA</del></span></strong></h1>
+
+    <p style="color: rgb(82, 190, 128); background-color: bisque;"><code>
+                    public Cliente alta (Cliente c) {<br>
+                        Statement st;<br>		
+                      PreparedStatement ps;<br>
+                         Connection con = abrirBase();<br>
+                         <br>
+                         try {<br>
+                             ps = con.prepareStatement("INSERT INTO tclientes (Nombre,Telefono) VALUES (?,?);");<br>
+                             ps.setString(1, c.getNombre());<br>
+                             ps.setString(2, c.getTelefono());<br>
+                             ps.executeUpdate();<br>
+                         } catch(Exception ex) {cerrarBase(con) ;;return null;} <br>
+                        <br>
+                        int idCliente;<br>
+                        <br>
+                        try {<br>
+                            st = con.createStatement();<br>
+                            ResultSet rs = st.executeQuery("SELECT Max(Id) AS Maximo FROM tclientes");<br>
+                            rs.next();<br>
+                            idCliente = rs.getInt("Maximo");<br>
+                        } catch (Exception ex) {cerrarBase(con);ex.printStackTrace();return null;} <br>
+                       <br>
+                        c.setId(idCliente);<br>
+                        cerrarBase(con);<br>
+                         return c;<br>
+                  } <br>
+                </code></p>
+
+    <p>A continuacion, dejamos un enlace para acceder al API de JAVA <br>
+        que va a ser nuestro mejor amigo durante el curso de DAM. <a
+            href="https://docs.oracle.com/javase/7/docs/api/" target="_blank">JAVA API</a></p>
+    <p>
+    <details>
+        <summary>Enlaces adicionales</summary>
+        <a href="https://introcs.cs.princeton.edu/java/11cheatsheet/" target="_blank">Cheat-sheet funcionalidades java</a><br>
+        <a href="https://www.mindprod.com/jgloss/jcheat.html" target="_blank">Cheat-sheet sintaxis java</a><br>
+        <a href="https://www.eclipse.org/downloads/" target="_blank">Descargar Eclipse IDE</a><br>
+        <a href="Archivos/MATRICULA.pdf" download>Descargar</a>
+    </details>
+    </p>
+</body>
+
+</html>
