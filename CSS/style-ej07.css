@@ -1,0 +1,5 @@
+#p2 { color: white; text-shadow: 0 0 3px #ff0000; }
+#p3 { text-shadow: black; text-shadow: -4px -3px 5px red, 0px 2px 2px blue, 4px -2px 4px green; }
+#p4 { background-color: #CCCCCC ; color: white; text-shadow: 0 0 3px white; }
+#p5 { background-color: #9B9B9B ; color: #9B9B9B; text-shadow: 1px 1px #3C3C3C, 1px 1px #3C3C3C; }
+#p6 { background-color: #CCCCCC ; color: #D1D1D1; text-shadow: 1px 1px #7d7f7d, -1px -1px #7d7f7d; }

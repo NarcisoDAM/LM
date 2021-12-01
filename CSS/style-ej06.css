@@ -1,0 +1,5 @@
+li:first-child { color: blue; }
+li:nth-of-type(2) { font-size: 125%; }
+li:nth-of-type(3) { font-size: 150%; }
+li:nth-of-type(4) { font-size: 175%; }
+li:last-child { color: blue; font-size: 200%; }
