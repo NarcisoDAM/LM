@@ -1,0 +1,36 @@
+.tituloprincipal{
+    color: #000;
+    font: small-caps lighter 24px Verdana, Arial, Sans-serif;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+.titulosecundario{
+    color: #000;
+    font: small-caps lighter 18px Verdana, Arial, Sans-serif;
+    text-decoration: overline;
+    letter-spacing: 3px;
+}
+
+.texto{
+    color: #000;
+    font: 14px Arial, Sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 160%;
+}
+
+#table-header{
+    background-color: #000;
+    color: aliceblue;
+}
+
+.ppar{
+    background-color: antiquewhite;
+}
+
+.pimpar{
+    background-color: gray;
+}
