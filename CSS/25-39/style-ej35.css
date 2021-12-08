@@ -1,0 +1,10 @@
+.tituloparrafo{
+    border: 4px red groove;
+    
+}
+
+.parrafo{
+    border: 1px blue ridge;
+    padding-left: 1cm;
+    margin-left: 2cm;
+}

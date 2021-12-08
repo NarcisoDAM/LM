@@ -1,8 +1,10 @@
 .tituloparrafo{
     border-style: dotted;
+    border-width: 4px;
 }
 
 .parrafo{
-    border-color: brown;
+    
     border-style: ridge;
+    border-width: 1px;
 }

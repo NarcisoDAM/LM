@@ -1,0 +1,43 @@
+div.caja1{
+    background-color: aqua;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    float: left;
+    width: 33%;
+    
+}
+
+div.caja2{
+    background-color: blueviolet;
+    width: 33%;
+    height: 200px;
+    position: absolute;
+    left: 1100px;
+    top: 100px;
+}
+
+div.caja3{
+    background-color: chartreuse;
+    width: 350px;
+    height: 200px;
+    float: left;
+    width: 33%;
+    position: relative;
+    
+    
+}
+
+div.caja4{
+    color: aliceblue;
+    background-color:black;
+    clear: both;
+    height: 100px;
+    
+    
+}
+
+div.container{
+    height: 500px;
+
+}

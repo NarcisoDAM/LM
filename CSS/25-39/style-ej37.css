@@ -1,0 +1,16 @@
+
+.div1{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border: 5px solid red;
+    
+}
+
+.div2{
+    float:right;
+    width: 50%;
+    box-sizing: border-box;
+    border: 5px solid blue;
+    
+}

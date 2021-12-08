@@ -1,0 +1,31 @@
+div.auto{
+    background-color: aqua;
+    width: 150px;
+    height: 40px;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+div.hidden{
+    background-color: blueviolet;
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+div.scroll{
+    background-color: chartreuse;
+    width: 150px;
+    height: 40px;
+    overflow: scroll;
+    margin-bottom: 100px;
+}
+
+div.visible{
+    background-color: coral;
+    width: 150px;
+    height: 40px;
+    overflow: visible;
+    margin-bottom: 100px;
+}
