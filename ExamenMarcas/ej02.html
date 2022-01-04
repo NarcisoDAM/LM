@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <form >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="Narciso"><br><br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" value="Lopez"><br><br>
+            <label for="fnacimiento">F. Nacimiento:</label>
+            <input type="date" id="fnacimiento" name="fnacimiento" value=""><br><br>
+            <label for="callenumero">Calle y numero:</label>
+            <input type="text" id="callenumero" name="callenumero" value=""><br><br>
+            <label for="cpostal">Codigo postal:</label>
+            <input type="number" id="cpostal" name="cpostal" value=""><br><br>
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" value="">
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" value=""><br><br>
+
+            <div>
+                Sexo &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="radiohombre">Hombre</label>
+                <input type="radio" id="radiohombre" name="sexohombre" value="hombre_radio">
+                <label for="radiomujer">Mujer</label>
+                <input type="radio" id="radiomujer" name="sexomujer"
+                    value="mujer_radio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                <label for="estadocivil">Estado civil:</label>
+                <select name="select">
+                    <option value="">Otro</option>
+                    <option value="estado1">Soltero</option>
+                    <option value="estado2">Casado</option>
+                    <option value="estado3">Divorciado</option>
+                </select><br><br>
+            </div>
+            <div>
+                Idiomas &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="cbox1" value="primer_checkbox"> <label for="cbox1">Español
+                    <input type="checkbox" id="cbox2" value="segundo_checkbox"> <label for="cbox2">Francés
+                        <input type="checkbox" id="cbox3" value="tercer_checkbox"> <label for="cbox3">Alemán
+                            <input type="checkbox" id="cbox4" value="cuarto_checkbox"> <label for="cbox4">Inglés
+            </div>
+
+
+            <div>
+                <br> Comentarios <br>
+                <textarea name="textarea" rows="3" cols="50"></textarea><br>
+            </div>
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Enviar los datos">
+            <input type="reset" value="Borrar los datos">
+
+        </form>
+    </div>
+</body>
+
+</html>

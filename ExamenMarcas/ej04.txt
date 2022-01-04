@@ -1,0 +1,26 @@
+DECLARACIONES                                       PUNTUACION                             
+
+body {color:grey}                                   0-0-0-1                                 
+
+body div.destacado p {color:black;}                 0-0-1-3
+
+body div.destacado p.destacado {color:black;}       0-0-2-3
+
+.destacado {color:green;}                           0-0-1-0
+
+div.destacado {color:blue;}                         0-0-1-1
+
+div.destacado p {color:yellow;}                     0-0-1-2
+
+body div div.destacado p {color:red;}               0-0-1-4
+
+div:first-child {color:magenta;}                    0-0-1-1
+
+
+
+GANADOR: Gana el color rojo, el motivo es que en el selector, aunque en el caso de
+body div.destacado p.destacado {color:black;}  la especificidad es mayor, el propio
+selector indica que se aplicará el color negro a los elementos p de clase .destacado 
+que sean hijos de los div de clase .destacado, y en este caso, no tenemos elemento p
+que sea de clase .destacado, por lo tanto se aplica el color rojo, que directamente
+se aplica a todos los elementos p, que sean hijos de div de clase .destacado.
